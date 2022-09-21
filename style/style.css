@@ -11,12 +11,118 @@ body{
 :root{
     --black:rgb(0, 0, 0);
     --white:rgb(255, 255, 255);
-    --grey:rgb(117, 116, 116);
-    --softblack:rgb(8, 11, 18);
+    --grey:rgb(113, 113, 113);
+    --softblack:rgba(14, 14, 15, 0.5);
     --darkblue:rgb(20, 25, 34);
     --green:rgb(173, 255, 47);
+    --lightgrey:rgb(117, 116, 116);
 }
-.dbug{
+.debug{
     border: 1px solid red;
 }
 
+.wrapper{
+    max-width: 1200px;
+    height: 100vh;
+    background-color: black;
+}
+.dflex{
+    display: flex;
+}
+.dflex-colum{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    color: var(--white);
+    padding: 1em;
+}
+/* MAIN */
+main{
+    width: 100%;
+    height: calc(100vh - 95px);
+    display: flex;
+}
+.main-content{
+    width: calc(100% - 230px);
+    height: 100%;
+    background-color: var(--darkblue); 
+}
+.inner-content{
+    height: 100%;
+    overflow: auto;
+}
+/* prima nav bar nel main */
+.nav-main{
+    width: 100%;
+    color:var(--lightgrey) ;
+    margin-top: 8em;
+   
+}
+ul{
+    list-style-type: none;
+}
+    
+a{
+    text-decoration: none;
+    color:var(--lightgrey) ;
+    padding: 2em;
+}
+.content-songs{
+    max-width: 1400px;
+
+}
+.box-songs{
+    text-align: center;
+    width: ((100% / 6 ));
+    padding: 1em;
+}
+h3{
+    color: var(--white);
+}
+p{
+    color: var(--lightgrey);
+}
+.box-songs img{
+    width: 100%;
+}
+
+.box-songs:hover{
+
+}
+
+
+
+
+
+
+
+
+
+
+/* NAV BAR LATERALE */
+nav{
+    width: 230px;
+    height: 100%;
+    background-color: var(--black);
+}
+
+/* PARTE DI SOPRA SFOCATA */
+aside{
+    width: 100%;
+    height: 95px;
+    background-color: var(--softblack);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* PLAYBAR */
+.playbar{
+    width: 100%;
+    height: 95px;
+    background-color: var(--grey);
+    position: fixed;
+    bottom: 0;
+    z-index: 2000;
+}
