@@ -1,0 +1,22 @@
+    /* UTILITY */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --black:rgb(0, 0, 0);
+    --white:rgb(255, 255, 255);
+    --grey:rgb(117, 116, 116);
+    --softblack:rgb(8, 11, 18);
+    --darkblue:rgb(20, 25, 34);
+    --green:rgb(173, 255, 47);
+}
+.dbug{
+    border: 1px solid red;
+}
+
