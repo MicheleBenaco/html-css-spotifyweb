@@ -37,6 +37,10 @@ h2{
     color: var(--white);
     padding: 1em;
 }
+p{
+    color: var(--lightgrey);
+    padding-left: 1em;
+}
 /* MAIN */
 main{
     width: 100%;
@@ -69,27 +73,45 @@ a{
     padding: 2em;
 }
 .content-songs{
-    max-width: 1400px;
-
+   width: 100%;
+    
 }
 .box-songs{
     text-align: center;
-    width: ((100% / 6 ));
+    width: calc( 100%/ 6);
     padding: 1em;
+    position: relative;
+  
 }
+
+
 h3{
     color: var(--white);
 }
-p{
+.box-songs p{
     color: var(--lightgrey);
 }
 .box-songs img{
     width: 100%;
 }
 
-.box-songs:hover{
+/* .material-symbols-outlined{
+    position: absolute;
+    top:6%;
+    left:2%;
+    color: white;
+    font-size: ;
+    background-color: rgba(14, 14, 15, 0.5);
+    width: 100%;
+    height: 90%;
+    padding-top: 0.5em;
+   
+} */
+/* hover da fare */
 
-}
+
+
+
 
 
 
